@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArticulos.Designer.cs">
+      <DependentUpon>FrmArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainAPP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +58,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmArticulos.resx">
+      <DependentUpon>FrmArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainAPP.resx">
       <DependentUpon>MainAPP.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TroubleShootings.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

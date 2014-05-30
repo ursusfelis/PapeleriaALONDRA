@@ -16,5 +16,17 @@ namespace PapeleriaALONDRA
         {
             InitializeComponent();
         }
+
+        private void toolStripTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submenu_articulos_Click(object sender, EventArgs e)
+        {
+            Frm_Articulos FArt = new Frm_Articulos();
+            FArt.MdiParent = this;
+            FArt.Show();
+        }
     }
 }

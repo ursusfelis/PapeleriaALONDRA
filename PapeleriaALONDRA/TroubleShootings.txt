@@ -1,0 +1,10 @@
+﻿MdiList = True:
+En las páginas donde Microsoft señala como hacer para que el Menu Ventanas, 
+sea donde se presenten las ventanas que estan actualmente abiertas en nuestra
+aplicación MDI, señala que debemos elegir el elemento Ventana del menu de nuestra
+aplicacion, y en las propiedadades buscar la denominada MdiList, pero resulta que
+en Visual Studio 2013, esta propiedad ya no esta ahi.
+Solución:
+Seleccionamos el control ToolStripMenuItem y ahi localizaremos su propiedad 
+MdiWindowListItem, en esta podemos ver la lista de elementos del menu, eligiremos
+una, para que sea la encargada de mostrar la lista de ventanas abriertas.
